@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.break {
+  margin-bottom: var(--sizes-1-5) !important
+}
+
+.mb-05 { margin-bottom: var(--sizes-05) !important }
+.mb-1 { margin-bottom: var(--sizes-1) !important }
+.mb-1-5 { margin-bottom: var(--sizes-1-5) !important }
+.mb-2 { margin-bottom: var(--sizes-2) !important }
+.mb-2-5 { margin-bottom: var(--sizes-2-5) !important }
+.mb-3 { margin-bottom: var(--sizes-3) !important }
+.mb-3-5 { margin-bottom: var(--sizes-3-5) !important }
+.mb-4 { margin-bottom: var(--sizes-4) !important }
+.mb-4-5 { margin-bottom: var(--sizes-4-5) !important }
+.mb-5 { margin-bottom: var(--sizes-5) !important }
+
+:where(html) {
+  --sizes-05: .5rem;
+  --sizes-1: 1rem;
+  --sizes-1-5: 1.5rem;
+  --sizes-2: 2rem;
+  --sizes-2-5: 2.5rem;
+  --sizes-3: 3rem;
+  --sizes-3-5: 3.5rem;
+  --sizes-4: 4rem;
+  --sizes-4-5: 4.5rem;
+  --sizes-5: 5rem;
+  --sizes-10: 10rem;
+  --sizes-15: 15rem;
+  --sizes-20: 20rem;
+}
